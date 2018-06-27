@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1036343946226",
+    "firebase_url": "https://stockapp-937e2.firebaseio.com",
+    "project_id": "stockapp-937e2",
+    "storage_bucket": "stockapp-937e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036343946226:android:06a09ed5bdc3392e",
+        "android_client_info": {
+          "package_name": "com.game.stock.stockapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036343946226-or81olj489qr0mipns3o15og2se6k66e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.game.stock.stockapp",
+            "certificate_hash": "91d3f82cfa25644a5ee54bf7e8c316ca38ec78c6"
+          }
+        },
+        {
+          "client_id": "1036343946226-umgls870h307qlu36q7ut05juf6cggoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCytqjw5gVaaFytFTrRdxLrE_u-AxXbEmo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036343946226-umgls870h307qlu36q7ut05juf6cggoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

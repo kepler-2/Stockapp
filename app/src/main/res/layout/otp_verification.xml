@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_border"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/otp_quote"
+    android:gravity="center"
+    android:textColor="@color/default_textcolor"
+    android:textSize="16sp"
+    android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_textcolor"
+            android:text="(otp) on"
+            android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/otp_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/default_textcolor"
+                android:text="9999999999"
+                android:layout_marginLeft="3dp"
+                android:textSize="16sp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_phone_android_black_24dp"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edttxt_enterOTP"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/otp_hint"
+            android:inputType="number"
+            android:padding="5sp"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_textcolor"
+            android:text="Didn't Receive the Otp?"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txt_resendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_textcolor"
+            android:text="Resend"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:textColor="#fff"
+            android:background="@color/buttoncolor"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

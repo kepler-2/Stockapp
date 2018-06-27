@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+           <!-- <item
+                android:id="@+id/nav_myhome"
+                android:icon="@mipmap/myac_icon"
+                android:title="HOME"
+                android:drawable="@drawable/bg_circle"/>
+-->
+            <item
+                android:id="@+id/nav_myaccount"
+                android:icon="@mipmap/myac_icon"
+                android:title="@string/nav_account"
+                android:drawable="@drawable/bg_circle"/>
+            <item
+                android:id="@+id/nav_leaguehistory"
+                android:icon="@mipmap/league_icon"
+                android:title="@string/nav_league_history" />
+            <item
+                android:id="@+id/nav_point_system"
+                android:icon="@mipmap/points_icon"
+                android:title="@string/nav_point_system"
+                />
+
+
+
+
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@mipmap/help_icon"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacyPolicy"
+                android:icon="@mipmap/help_icon"
+                android:title="@string/nav_privacy_policy" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@mipmap/help_icon"
+                android:title="@string/nav_help" />
+
+            <item
+                android:id="@+id/nav_invite"
+                android:icon="@mipmap/invite_icon"
+                android:title="@string/nav_invite" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/logout_icon"
+                android:title="@string/na_logout"
+      android:drawable="@color/gradient_start"
+                />
+
+        </group>
+
+
+
+    </menu>
+

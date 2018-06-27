@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#0B4684</color>
+    <color name="colorAccent">#0B4684</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="gradient_start">#1361b3</color>
+    <color name="loginbutton">#0b4684</color>
+
+    <color name="buttoncolor"> #0B4684</color>
+    <color name="gradient_end">#1361B3</color>
+
+    <color name="grey_color">#7F7F7F</color>
+    <color name="default_textcolor">#000000</color>
+
+
+
+    <color name="bgcolor">#F0F0F0</color>
+    <color name="verifycolor">#302f2f</color>
+    <color name="red">#f20f0f</color>
+
+    <color name="tab_bg_selected">#302f2f</color>
+    <color name="tab_bg">#dedbdb</color>
+
+
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2sp"
+        android:padding="5sp"
+        android:background="#8c8787">
+        <TextView
+            android:id="@+id/txt_lhDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="2sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_lhleagueAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="League Amount"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_winningAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Winning Amount"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_lhRank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rank"
+            android:layout_weight="1"
+            android:gravity="center"
+          />
+
+
+    </LinearLayout>
+
+</LinearLayout>

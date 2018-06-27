@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/add_league"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:textColor="@color/white"-->
+        <!--/>-->
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<include-->
+                <!--layout="@layout/toolbar_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCC"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#EBEBEB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/league_name"/>
+
+          <TextView
+                android:id="@+id/txt_LeagueName"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Leauge"
+                android:textColor="#000"
+              android:gravity="center_vertical"
+              android:layout_marginLeft="5dp"
+                 />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/rupay_icon"/>
+            <TextView
+                android:id="@+id/txt_Amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="EntryFees"
+               android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCC" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+               >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/playr_nametwo"/>
+            <TextView
+                android:id="@+id/txt_KingName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="King"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                />
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_height="30sp"
+                    android:layout_width="wrap_content"
+                    android:text="EDIT"
+                   android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white">
+                <!--&lt;!&ndash;android:layout_marginRight="20sp"&ndash;&gt;>-->
+
+                </Button>
+                <!--<Button-->
+                    <!--android:id="@+id/btn_Edit"-->
+                    <!--android:layout_width="0dp"-->
+                   <!--android:layout_height="30sp"-->
+                    <!--android:text="EDIT"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_marginLeft="20sp"-->
+                    <!--android:layout_marginRight="20sp"-->
+                    <!--android:layout_marginBottom="10sp"-->
+                    <!--android:background="@color/colorPrimaryDark"/>-->
+
+
+                <!--/>-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="2sp"
+                android:layout_height="match_parent"
+                android:background="#CCC"
+                android:layout_marginLeft="14sp"
+                android:layout_marginRight="14sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/playr_nameone"/>
+
+
+            <TextView
+                android:id="@+id/txt_QueenName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Queen"
+                android:textColor="#000"
+                android:layout_marginTop="5sp"
+                />
+
+                <Button
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/btn_Pay"
+                    android:layout_height="30sp"
+                    android:layout_width="wrap_content"
+                    android:text="PAY"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white">
+                    <!--&lt;!&ndash;android:layout_marginRight="20sp"&ndash;&gt;>-->
+
+                </Button>
+
+            </LinearLayout>
+        </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.game.stock.stockapp.Welcome_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+
+    <!-- FOOTER -->
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <!-- menu bar -->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/skip"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/loginbutton"/>/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/logo"
+        android:layout_marginTop="80sp"
+        />
+        <TextView
+
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4sp"
+            android:text="@string/logotext"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/loginbutton"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textSize="@dimen/button"
+        android:textColor="@color/white"
+        android:layout_marginTop="80sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        ></Button>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/loginbutton"
+            android:text="@string/signup"
+            android:textAllCaps="true"
+            android:textSize="@dimen/button"
+            android:layout_marginTop="15sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            ></Button>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

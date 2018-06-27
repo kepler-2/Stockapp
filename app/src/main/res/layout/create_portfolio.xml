@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            >
+
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/sensexnifty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nifty50 BankNifty"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            >
+
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:src="@drawable/kingqueen"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="King &amp; Queen"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="@color/colorAccent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_nifty50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:background="@color/gradient_start"
+            android:gravity="center_horizontal">
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:text="NIFTY 50"
+           android:gravity="center_horizontal"
+           />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_bankNifty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+
+            android:padding="10sp"
+            >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="BANK NIFTY"
+            android:gravity="center_horizontal"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp">
+
+
+
+            <ListView
+                android:id="@+id/listview_sensexNifty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="0dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_nextbutton"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/txt_addedPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="0"
+            android:layout_marginLeft="10sp"
+            android:textSize="@dimen/foter_text_size"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="/"
+            android:textSize="@dimen/foter_text_size"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/txt_mainimumPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="20"
+            android:textSize="@dimen/foter_text_size"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/txt_nextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Next"
+            android:layout_marginRight="50sp"
+            android:textSize="@dimen/foter_text_size"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+

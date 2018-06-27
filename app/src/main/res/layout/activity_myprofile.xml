@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <LinearLayout
+        android:id="@+id/myProfile_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="?attr/colorPrimaryDark"
+            android:padding="10dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:src="@drawable/profile_circle"    />
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--android:id="@+id/img_profile"-->
+                <!--android:layout_width="120sp"-->
+                <!--android:layout_height="120sp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+
+                <!--app:srcCompat="@drawable/profile_circle" />-->
+
+
+            <TextView
+                android:id="@+id/txt_uploadImageGallery"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                android:textColor="#fff"
+                android:layout_marginLeft="90dp"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/myProfile_Footer"
+        android:layout_below="@+id/myProfile_Header">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="#777"
+           />
+            <EditText
+                android:id="@+id/edt_userName"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:singleLine="true"/>
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#777"
+           />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edt_fullName"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Your Full Name here"
+                android:textColor="#000"
+                android:singleLine="true"/>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_changeFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:background="@drawable/ic_border_color_black_24dp"
+                    android:textColor="#777"
+
+                    />
+            </LinearLayout>
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#777"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edt_email"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Your Email Is not verified"
+                android:textColor="#000"
+                android:singleLine="true"/>
+
+                <TextView
+
+                    android:id="@+id/txt_emailVerification"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_info_outline_black_24dp"
+                    android:gravity="end"
+                    android:textColor="#777"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:textColor="#777"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/edt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Your Mobile is not verified"
+                android:textColor="#000"
+                android:singleLine="true"
+                />
+            <TextView
+                android:id="@+id/txt_mobverify"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info_outline_black_24dp"
+                android:gravity="end"
+                android:textColor="#777"
+               />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#777"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint=""
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                 />
+            <TextView
+                android:id="@+id/txt_changePsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="@drawable/ic_border_color_black_24dp"
+                android:textColor="#777"
+
+                /></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="PAN No"
+                android:textColor="#777"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edt_pan"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Your PAN is not verified"
+                android:textColor="#000"
+
+                android:singleLine="true"
+                />
+
+                <TextView
+                    android:id="@+id/txt_PanVerify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_info_outline_black_24dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="#777"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Bank"
+                android:textColor="#777"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edt_bankDetail"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:hint="Your Bank Detail is not mentioned"
+
+                android:singleLine="true"
+                />
+            <TextView
+                android:id="@+id/txt_bankDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="@drawable/ic_info_outline_black_24dp"
+                android:gravity="end"
+                android:textColor="#777"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+    <LinearLayout
+        android:id="@+id/myProfile_Footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="19sp"/>
+    </LinearLayout>
+</RelativeLayout>

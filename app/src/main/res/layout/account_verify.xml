@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#dedbdb"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_mobile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        >
+    <TextView
+android:id="@+id/txt_MOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mobile Email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_PAN"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    <TextView
+        android:id="@+id/txt_PAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        android:text="PAN"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_BANK"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    <TextView
+        android:id="@+id/txt_Bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Bank"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments_navigation.Invite"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="?attr/colorPrimaryDark">
+
+            <include layout="@layout/nav_toolbar"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/logo"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="2sp"
+            />
+        <TextView
+
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4sp"
+            android:text="@string/logotext"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80sp"
+
+            >
+
+            <TextView
+
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4sp"
+                android:text="@string/invite_title1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                >
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/fb_invite"
+
+                    />
+                <ImageView
+                    android:id="@+id/gplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/gplus"
+                    android:layout_marginLeft="8sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/watsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/whatsapp"
+                    android:layout_marginLeft="8sp"/>
+
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/more"
+                    android:layout_marginLeft="8sp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
